@@ -1,0 +1,400 @@
+p, div, h1, h2, h3, h4, h5, h6, table, td, tr, body, a, img, ins, ul, li, form{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 100%;
+	color: #fff
+}
+
+body {
+	    background-image: url(../img/bckgroundtop.png);
+	background-position: top;
+	background-repeat: repeat-x;    
+    	
+    font-size: 10px;    
+    background-color: #b5c5cb}
+
+div#wrapper {
+	width:982px;
+	margin: 0 auto;
+ 	height: 679px;
+	position: relative;
+}
+
+div#header {
+	width: 942px;
+	height: 81px;
+	padding: 9px 20px 0px 20px;
+	position: relative;
+    color:#fff;
+    z-index:10;
+     
+}
+
+div#header h1{
+	float: left;
+}
+
+.title_date {
+	float: left;
+	font-size: 1.1em;
+	color: #fff;
+	margin-top: 30px;
+    font-weight:bold;
+    padding-left:10px;
+}
+
+.title_date a { color:#fff; }
+.title_date a:hover { color:#fbc2a5;}
+
+/* SEARCH AREA STYLING */
+
+div#search_login{
+	float: right;
+	width: 500px;
+	text-align: right;	    
+}
+
+div#search_login ul{
+	list-style: none;
+	padding-top: 13px;
+	padding-left: 13px;
+}
+
+ul#ul_search_login li.search_login_link {
+	font-size:1.1em;
+	font-weight:600;
+	line-height:1.3em;
+}
+
+
+
+div#search #searchBox{
+	margin-top: .2em;
+	width:148px;
+}	
+
+.caps{
+	line-height:1em;
+    color: #fff;
+}
+
+input#google, input#people, input#offices {
+	width: 14px;
+	height: 14px;
+    margin:0;
+    margin-bottom:2px;
+}
+
+input#gobut {
+	font-size: 1.1em;
+	padding: 2px;
+    width:4.8em;
+}
+
+/* END SEARCH AREA STYLING */
+
+div#content {
+	width:980px;
+	height:620px;
+	position: relative;
+    border-left: #000 1px solid;
+	border-right: #000 1px solid;
+    
+    }
+
+.clearit{
+	clear: both;
+	height: 0;
+	line-height: 0.0;
+	font-size: 0;
+}
+
+/* NAV STYLING */
+
+div#left_nav{
+    width: 230px;
+	height: 500px;
+	position:absolute;
+	top:20px;
+	left:15px;    
+    z-index:10;
+   	    background-image:url(../img/transperantPNG90.png);  
+        }
+
+div#left_nav ul{
+	list-style: none;
+	padding-top: 7px;
+	padding-left: 13px;
+}
+
+li.main_link {
+	font-size:1.5em;
+	font-weight:600;
+	line-height:1.7em;
+}
+
+li.main_link a{
+	color: #9eedf8;
+}
+
+li.main_link a:hover, li.Rmain_link a:hover{
+	color: #fbc2a5;
+}
+
+/* FOR RIGHT NAV CENTER MAIN LINKS */
+
+li.Rmain_link {
+	font-size:1.4em;
+	font-weight:600;
+	line-height:1.8em;
+	padding-top: .7em;
+}
+
+li.Rmain_link a{
+	color: #9eedf8;
+}
+
+/* END RIGHT NAV CENTER MAIN LINKS */
+
+ul#main_nav_left li.sub_link {
+	font-size:1.4em;
+	padding-bottom:.2em; 
+	padding-left: 6px;
+    color: #9eedf8;
+}
+
+ul#newsAndevents li.sub_link {
+	font-size:1.2em;
+	padding-bottom:1.1em;
+    padding-right:10px;
+    color: #9eedf8;
+}
+
+ul#newsAndevents li.sub_news {
+    color: #9eedf8;
+}
+
+li.sub_link a{
+	color: #fff;
+}
+
+li.sub_link a:hover{
+	color: #fbc2a5;
+}
+
+li.sub_news a{
+	color: #9eedf8;
+}
+
+li.sub_news a:hover{
+	color: #fbc2a5;
+}
+
+li.sub_news {
+	font-size:1.2em;
+	font-weight:300;
+	line-height:1.8em;
+}
+
+span.pipe {
+	font-size: 1.1em;
+	padding: 0 .3em 1em .3em;
+}
+
+/* END NAV STYLING */
+
+div#BotLinks p#footlinks span.pipeBot {
+	padding: 0 0.7em;
+	align: center;
+}
+
+div#right_nav {
+    position:absolute;
+    z-index:10;
+	top:20px;
+	left:783px;
+	width: 182px;
+	height: 500px;
+	    background-image:url(../img/transperantPNG.png);  
+     
+  }
+  
+div#notice {
+	background-color:#B1180A;
+    font-weight:bold;
+	padding: 13px 10px 10px 13px;
+ }
+ 
+div#notice a{
+	color:#fff;
+}
+ 
+ p#notification_text #headline {
+	 font-size:1.6em;
+	 font-weight:600;
+ }
+ 
+ p#notification_text {
+	 font-size:1.3em;
+	 line-height: 1.5em;
+ }
+
+div#right_nav ul{
+	list-style: none;
+	padding-top: 13px;
+	padding-left: 13px;
+}
+
+/* END RIGHT NAV STYLING */
+
+
+/* SPOTLIGHT TEXT STYLING */
+
+#spot_text {
+	position:absolute;
+    z-index:10 !important;
+	top: 20px;
+	left: 260px;
+    padding: 8px;	
+        background-image:url(../img/transperantSpotlightPNG.png);  
+     
+}
+
+#spot_text a{
+	color: #fff;	
+}
+#spot_text a:hover{
+	color: #f2cc40;	
+}
+
+#spot_title {
+	font-size:1.2em;
+	line-height:1.6em;    
+}
+
+#spot_title a{
+	font-style:italic;
+    font-weight:normal;
+}
+
+#spot_hed {
+	font-size:1.5em;
+	font-weight:600;
+	line-height:1.3em;
+}
+
+#spot_dek {
+	font-size:1.2em;
+}
+
+/* END SPOTLIGHT TEXT STYLING */
+
+div#footer {
+	height: 59px;
+	clear: both;
+	padding-left: 20px;
+	padding-right: 20px;
+    
+   background-image: url(../img/bckground.png);}
+
+div#BotLinks {
+    width:942px;
+	height:59px;
+	position:relative;
+	z-index:10;
+}
+
+p#footlinks {
+    font-size:1.1em;
+    line-height:1.6em;
+    padding-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+    color: #fff;
+    float:left;
+}
+
+p#footlinks a{
+	color: #fff;
+}
+
+p#footlinks a:hover {
+	color: #fbc2a5 !important;
+}
+
+div#GiveBtn {
+	float:right;
+	height:2.7em;
+	width:12.1em;
+	margin-top:1em;
+}
+
+div#flash {
+	width:483px;
+	height:432px;
+	position:absolute;
+    top: 0px;
+	left: 0px;
+	z-index:2;
+}
+
+p.CredText {
+	font-size:1.2em;
+	line-height:1.3em;  
+    color: #FFF;
+	padding-left:13px;
+}
+
+div#ImgCredit {
+	position:absolute;
+	top:470px;
+	left:783px;
+	width:18em;
+	height:auto;
+    padding:5px 0;
+    z-index:10;
+	}
+
+div#ImgCredit a:hover{
+	color: #fbc2a5;
+} 
+
+
+#mit150 {
+ border-bottom: 1px solid #FFFFFF;
+    margin: 0 13px;
+    padding-bottom: 13px;
+    padding-top: 19px;
+}
+#mit150_logo {
+	float:left;
+    padding-top: 2px;
+}
+#mit150_right {
+	float: left;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding-left: 12px;
+    width: 144px;
+    color: #9eedf8;
+}
+#mit150_right em { text-decoration: underline; }
+#mit150_right a {
+	color: #fff;
+}
+#mit150_right a:hover {
+	color: #fbc2a5;
+}
+
+#mit150_link{ color: #fff; font-style: italic; }
+#mit150_link:hover{ color: #fbc2a5; }
+
+.social-icons{ margin-left: 5px; }
+.social-icons img{ vertical-align: sub; }
+
+#left_nav, #right_nav, #ImgCredit, #spot_text { behavior: url(iepngfix.htc); z-index:3; }
