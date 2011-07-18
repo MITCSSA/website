@@ -1,13 +1,15 @@
 var parseNews = function (data) {
-  var xmlDoc = $.parseXML(data);
-  var $xml = $(xmlDoc);
-  var $headline = $xml.find("headline");
-  console.log($headline.text());
-  $("#newsAndevents li:first").
-      after("<li class='sub_link'><a>" + $headline.text() + "</a></li>");
+  var pattern = /<headline>([\s\S]+?)<\/headline>/g;
+  var result = data.match(pattern);
+  var replaceTag = function (e) {
+    e = e.replace("<headline>", "<li class='sub_link'><a>");
+    return e.replace("</headline>", "</a></li>");
+  }
+  var events = result.map(replaceTag).join("");
+  $("#newsAndevents li:first").after(events);
 }
 
-var fetchUrl = function (url) {
+var fetchNews = function (url) {
   $.ajax({
     url: url,
     success: function (data) {
@@ -17,7 +19,7 @@ var fetchUrl = function (url) {
 }
 
 var onLoad = function () {
-  var data = fetchUrl('http://cssa.mit.edu/forum/ssi.php?m=posts&a=topicposts&topic=35437&start=0&show=5&sort=DESC');
+  var data = fetchNews('http://cssa.mit.edu/forum/ssi.php?m=posts&a=topicposts&topic=35437&start=0&show=5&sort=DESC');
 }
 
 $(onLoad);
