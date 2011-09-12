@@ -11,12 +11,13 @@ p, div, h1, h2, h3, h4, h5, h6, table, td, tr, body, a, img, ins, ul, li, form{
 }
 
 body {
-	    background-image: url(../img/bckgroundtop.png);
+	background-image: url(../img/bckgroundtop.png);
 	background-position: top;
 	background-repeat: repeat-x;    
     	
-    font-size: 10px;    
-    background-color: #b5c5cb}
+  font-size: 10px;    
+  background-color: #b5c5cb
+}
 
 div#wrapper {
 	width:982px;
@@ -220,7 +221,7 @@ div#right_nav {
 	left:783px;
 	width: 182px;
 	height: 500px;
-	    background-image:url(../img/transperantPNG.png);  
+	background-color:rgba(0, 0, 0, 0.8)
      
   }
   
@@ -257,12 +258,26 @@ div#right_nav ul{
 
 #spot_text {
 	position:absolute;
-    z-index:10 !important;
+  z-index:10 !important;
 	top: 20px;
 	left: 260px;
-    padding: 8px;	
-        background-image:url(../img/transperantSpotlightPNG.png);  
-     
+  width: 508px;   
+}
+
+#spot_text .event {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 500px;
+  color: black;
+  padding: 8px;
+  height: 580px;
+  font-size: small;
+}
+
+#spot_text .event headline {
+  font-weight: bold;
+  font-size: medium;
 }
 
 #spot_text a{
