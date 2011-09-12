@@ -280,6 +280,15 @@ div#right_nav ul{
   font-size: medium;
 }
 
+#spot_text .event a{
+  color: #B1180A;  
+  text-decoration: underline;
+}
+#spot_text .event a:hover{
+  color: #B1180A; 
+  text-decoration: underline;
+}
+
 #spot_text a{
 	color: #fff;	
 }
